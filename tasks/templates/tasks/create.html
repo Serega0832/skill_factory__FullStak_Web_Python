@@ -1,0 +1,20 @@
+{% load static %}
+<html>
+<head>
+    <title>Новая задача</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Создать задачу</h1>
+        <form action="/add-task" method="post">
+            <input type="text" name="description" class="form-contol"/>
+            <button class="add" type="submit">+</button>
+        </form>
+    </div>
+
+</body>
+</html>
